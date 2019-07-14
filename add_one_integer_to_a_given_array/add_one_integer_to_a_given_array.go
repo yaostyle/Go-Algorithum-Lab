@@ -1,12 +1,11 @@
 // ADD ONE INTEGER TO A GIVEN ARRAY
-// A golang way to add one integer in a list of array 
-// Also, in order to solve issue w/ additional leading digit 
+// A golang way to add one integer in a list of array
+// Also, in order to solve issue w/ additional leading digit
 // such as [9 9 9] to [1 0 0 0], program has to recreate
 // a new list.
 //
 // Example: [1 2 3] -> [1 2 4]
 // Example: [9 9 9] -> [1 0 0 0]
-
 
 package main
 
@@ -38,13 +37,13 @@ func addOne(arr []int) []int {
 }
 
 func main() {
-	var a = []int{1,2,8}
+	var a = []int{1, 2, 8}
 	fmt.Println(a)
 
 	na := addOne(a)
 	fmt.Println(na)
-	
-	a = []int{9,9,9}
+
+	a = []int{9, 9, 9}
 	fmt.Println(a)
 
 	na = addOne(a)
